@@ -63,25 +63,3 @@ print( 3 > 5 and 4 < 3) # AND requiers ALL expersions to be True.
 print(3 > 2 and 4 != 3)
 print( 3 > 2 and 4 != 3 and "favColor" == "Blue" and temp == -5)
 # When writing and expressions, put the value most likely to be False first!
-
-# Logical OR --  Requires ONE expression to be True 
-
-Print (5 > 2 or 2 < -2) 
-
-Print (3 != 3 or 5== 5) 
-
- 
-
-# AND  OR Combined 
-
-Print(“Line 81”) 
-
-Print (3 > 2 and 4 < 3 or 5 != 7) 
-
-# Print (True and False or True) 
-
-# NOT Logical Operator  
-
-Print (not ( 3 >2)) 
-
-Print (not (not (not (5 != 3)))) 
