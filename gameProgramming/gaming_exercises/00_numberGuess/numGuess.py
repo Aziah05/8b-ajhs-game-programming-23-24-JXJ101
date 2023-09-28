@@ -52,6 +52,10 @@ print("You need to guess a number from 0 to 20 and you have four guesses. \nIf y
 #input(1)
 
 while playerScore != 3  and cpuScore != 3:
+    # Code crashes immediately here, indicates you did not test it before submitting. 
+    # The following lines are out of scope because they are not indented correctly.
+    # Python thinks the while loop has no code! 
+
 difficulty = input("type what difficulty you want to choose")
 print(f"you chose {difficulty} is that correct?")
 isCorrect = input("Please type yes if correct, no if not correct.\n")

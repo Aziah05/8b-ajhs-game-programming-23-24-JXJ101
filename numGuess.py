@@ -59,7 +59,7 @@ while playerScore != 3  and cpuScore != 3:
         print(f"Ok {playerName}, let's continue!")
 
     print(f"Player Score: {playerScore}\nCPU: {cpuScore}.\n")
-    secretNumber = random.randint(rangeMin, rangeMax)
+    secretNumber = random.randint(rangeMin, rangeMax) # MUST GENERATE AFTER SETTING rangeMin and rangeMax!
     # print(secret_number)
     # You do not ask the player to input a difficulty.  
     if difficulty == "easy": 
@@ -78,10 +78,6 @@ while playerScore != 3  and cpuScore != 3:
         pass
         # playerName = input("choose the difficulty\n Type the difficulty you want to choose and press Enter.\n")
         # Print that the difficulty could not be matched, provide default values.
-        
-
-
-    
     
     for guesses in range(numAttempts): # What can you replace the 4 with to make the number of guesses change to reflect the difficulty?  
         print(f"You have {numAttempts - numGuesses} guesses remaining\n")
@@ -89,6 +85,7 @@ while playerScore != 3  and cpuScore != 3:
         # input() saves all data as a STRING by default
         # int() will convert to a integer
         # float() will convert to a FLOAT
+        print(secretNumber)
         print(f"You have chosen {playerGuess}. Let's see if you're right!\n")
         if playerGuess == secretNumber:
             playerScore  += 1 
@@ -104,7 +101,9 @@ while playerScore != 3  and cpuScore != 3:
     if playerGuess != secretNumber:
         cpuScore += 1 
         print("The CPU wins a point since you ran out of guesses.\n")
-        
+
+    # The following code should be outside the scope of the while loop. 
+    # Move the lines to the left 4 spaces each! 
     if playerScore >3:
         print("Winner, winner, chicken dinner! You scored 3 points first!\n")
     else:
