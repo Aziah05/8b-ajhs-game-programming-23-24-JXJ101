@@ -1,4 +1,4 @@
-# Collections Examples, jahreem jeffers, V0.2b
+# Collections Examples, jahreem jeffers, V0.2c
 
 # LIST -- ORDERED,  CHANGEABLE, ALLOWS DUPLITCATE VALUES
 breakfastFoods = ["Bacon", "Waffles", "Pancakes", "Ceral", "Milk"]
@@ -50,26 +50,57 @@ classGPA = [3.14, 2.25, 1.74, 1.99, 0.99, 4.25]
 
 # Adding and Inserting Items toa List
 # .append() adds an item ot the END of a list.
-breakfastFoods.append("hash browns")
-print(breakfastFoods)
-testScores.append(99)
-print(testScores)
-classGPA.append(1.99)
-print(classGPA)
+#breakfastFoods.append("hash browns")
+#print(breakfastFoods)
+#testScores.append(99)
+#print(testScores)
+#classGPA.append(1.99)
+#print(classGPA)
 
 # .insert() allows you to place an item ata specific index in the list.
-breakfastFoods.insert(3, "Parfeit")
-print(breakfastFoods)
-testScores.insert(3,55)
-print(testScores)
-classGPA.insert(3, 0.0)
-print(classGPA)
+#breakfastFoods.insert(3, "Parfeit")
+#print(breakfastFoods)
+#testScores.insert(3,55)
+#print(testScores)
+#classGPA.insert(3, 0.0)
+#print(classGPA)
 
 # PAUSE -- WYOC -- .append() another item to each list. ,insert() an item at index 5 to each 5 to each list 
-breakfastFoods.append("banana")
-print(breakfastFoods)
-testScores.append(80)
-print(testScores)
-classGPA.append(3.5)
-print(classGPA)
+#breakfastFoods.append("banana")
+#print(breakfastFoods)
+#testScores.append(80)
+#print(testScores)
+#classGPA.append(3.5)
+#print(classGPA)
+
+# Deleting Items froma List
+# Use .remove a specific item from the list
+#breakfastFoods.remove("Waffles")
+#print(breakfastFoods)
+#testScores.remove(100)
+#print(testScores)
+#classGPA.remove(2.25)
+#print(classGPA)
+
+# To delete using the indexvalue we use .pop()
+#breakfastFoods.pop(4)
+#print(breakfastFoods)
+#testScores.pop(4)
+#print(testScores)
+#classGPA.pop(4)
+#print(classGPA)
+
+# Pause - WYOC -- .pop() the 2nd element from each list. .remove() any item from the list
+#REMEMBER index bacon is 0 and so forth
+#breakfastFoods.pop(1)
+#print(breakfastFoods)
+#testScores.pop(1)
+3print(testScores)
+#classGPA.pop(1)
+#print(classGPA)
+#breakfastFoods.remove("Bacon")
+#print(breakfastFoods)
+#testScores.remove(95)
+#print(testScores)
+#classGPA.remove(3.14)
 
