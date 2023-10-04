@@ -1,4 +1,4 @@
-# Collections Examples, jahreem jeffers, V0.2a
+# Collections Examples, jahreem jeffers, V0.2b
 
 # LIST -- ORDERED,  CHANGEABLE, ALLOWS DUPLITCATE VALUES
 breakfastFoods = ["Bacon", "Waffles", "Pancakes", "Ceral", "Milk"]
