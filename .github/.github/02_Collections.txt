@@ -1,4 +1,4 @@
-# Collections Examples, jahreem jeffers, V0.2c
+# Collections Examples, jahreem jeffers, V0.3A
 
 # LIST -- ORDERED,  CHANGEABLE, ALLOWS DUPLITCATE VALUES
 breakfastFoods = ["Bacon", "Waffles", "Pancakes", "Ceral", "Milk"]
@@ -95,7 +95,7 @@ classGPA = [3.14, 2.25, 1.74, 1.99, 0.99, 4.25]
 #breakfastFoods.pop(1)
 #print(breakfastFoods)
 #testScores.pop(1)
-3print(testScores)
+#print(testScores)
 #classGPA.pop(1)
 #print(classGPA)
 #breakfastFoods.remove("Bacon")
@@ -103,4 +103,9 @@ classGPA = [3.14, 2.25, 1.74, 1.99, 0.99, 4.25]
 #testScores.remove(95)
 #print(testScores)
 #classGPA.remove(3.14)
+
+# Determining List length
+print(f"There are {len(breakfastFoods)} items in the breakfastFoods list.")
+print(f"There are {len(testScores)} scores in the testScores list.")
+print(f"There are {len(classGPA)} GPA scores in the classGPA list.")
 
