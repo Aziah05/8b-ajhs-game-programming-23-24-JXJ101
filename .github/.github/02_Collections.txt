@@ -1,4 +1,4 @@
-# Collections Examples, jahreem jeffers, V0.4A
+# Collections Examples, jahreem jeffers, V0.4B
 
 # LIST -- ORDERED,  CHANGEABLE, ALLOWS DUPLITCATE VALUES
 #breakfastFoods = ["Bacon", "Waffles", "Pancakes", "Ceral", "Milk"]
@@ -135,7 +135,7 @@ testCount = testScores.count(95)
 print(f"There are {testCount} 95 in the list.")
 testCount15 = testScores.count(15)
 print(f"There are {testCount} 15 in the list.")
-gpaCount = gpa.count(0.99)
+gpaCount = classGPA.count(0.99)
 print(f"There are {gpaCount} 0.99 in the list.")
-gpaCountRepeat = gpacountRepeat(1.74)
-print(f"There are {gpaCountRepeat} 1.74 in the list.")
+gpaCountRepeat = classGPA.count(1.74)
+print(f"There is {gpaCountRepeat} GPA equal to 1.74.")
