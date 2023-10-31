@@ -48,8 +48,20 @@ def getRandomWord(wordList): # Return a random word from the list.
     #len(listName - 1 is EXTREMELY COMMON FOR WORKING FOR LISTS.
     return wordList[wordIndex]
     
-i = 0
-while i < 100:
-    word = getRandomWord(words)
-    print(word)
-    i += 1
+def displayBoard(missedLetters, correctLetters, secretWord):
+    print(HANGMAN_BOARD[len(missedLetters)])
+    print()
+    
+    print('Missed Letters:', end = ' ')
+    for eachLetter in missedLetters:
+        print(eachLetter, end = ' ')
+    print()
+    # FINISH THURSDAY
+
+#i = 0
+#while i < 100:
+    #word = getRandomWord(words)
+    #print(word)
+    #i += 1
+    
+    
