@@ -7,7 +7,7 @@ import random
 # Actual Dictionary Woes (Key) : Value (Definition)
 # Uses {} to specify a dictionary
 words = {'Colors': 'Red orange yellow Green yellow blue indigo violet fuchia teal garnet gold black white silver gray'.split(),
-        'Animals': 'cat cow dog moose goose fish wombat wolverine giraffe wolf liom alligator'.split(),
+        'Animals': 'cat cow dog moose goose fish wombat wolverine giraffe wolf lion alligator'.split(),
         'Shapes': 'square triangle circle rhombus parallogram trapeziod diamond dodecahedron'.split(),
         'Foods': 'hamburger hotdog potato waffle pancake escargot oysters chips steak'.split()}
 
@@ -159,10 +159,10 @@ while True:
         
         if len(missedLetters) == len(HANGMAN_BOARD) - 1:
             displayBoard(missedLetters, correctLetters, secretWord)
-        print('You have run out of guesses and lost the game. Shame')
-        print('You made this number of correct guesses' + str(len(correctLetters)))
-        print('The secret word was' + secretWord)
-        gameIsDone = True
+            print('You have run out of guesses and lost the game. Shame')
+            print('You made this number of correct guesses' + str(len(correctLetters)))
+            print('The secret word was' + secretWord)
+            gameIsDone = True
 
     if gameIsDone:
         if playAgain(): 
