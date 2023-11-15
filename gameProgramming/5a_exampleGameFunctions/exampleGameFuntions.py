@@ -16,18 +16,18 @@ def functionFour(param1, param2, param3):
 # fighting game genre
 # Choosing character
 
-characters = 'aiden jaiden melina blaze virus JXJ JXQ Jack Blackmask Eclipsa'.split()
+character = {'aiden, jaiden, melina, blaze, virus, jxj, jxq, Jack, Blackmask, Eclipsa'}
 
 def genStats():
-    aiden = [
-	    9, # STRENGTH
-	    7, # DEXTERITY
-	    8, # CONSITUTION
-	    6, # INTELLEGENCE
-	    8, # WISDOM
-	    7, # CHARISMA
+    aidenStats = [
+        healthAiden [120] # HEALTH
+        strengthAiden [9] # STRENGTH
+	    consitutionAiden [8] # CONSITUTION
+	    intellegenceAiden [6] # INTELLEGENCE
+	    wisdomAiden = 8, # WISDOM
+	    charismaAiden = 7, # CHARISMA
     ]
-    jaiden = [
+    jaidenStats = [
 	    5, # STRENGTH
 	    9, # AGILITY
 	    4, # CONSITUTION
@@ -35,25 +35,82 @@ def genStats():
 	    6, # WISDOM
 	    6, # CHARISMA
     ]
-    melina = [
-	    8, # DARK MAGIC
-	    8, # STAMINA
-	    8, # CONSITUTION
-	    6, # INTELLEGENCE
-	    8, # WISDOM
-	    7, # CHARISMA
+    melinaStats = [
+	    healthMelina = 120, # HEALTH
+	    strengthMelina = 9, # STRENGTH
+	    consitutionMelina = 8, # CONSITUTION
+	    intellegenceMelina = 6, # INTELLEGENCE
+	    wisdomMelina = 8, # WISDOM
+	    charismMelina = 7
     ]
+    blazeStats = [
+	    healthBlaze = 120, # HEALTH
+	    strengthBlaze = 9, # STRENGTH
+	    consitutionBlaze = 8, # CONSITUTION
+	    intellegenceBlaze = 6, # INTELLEGENCE
+	    wisdomBlaze = 8, # WISDOM
+	    charismaBlaze = 7
+    ]
+    virusStats = [
+	    healthVirus = 120, # HEALTH
+	    strengthVirus = 9, # STRENGTH
+	    consitutionVirus = 8, # CONSITUTION
+	    intellegenceVirus = 6, # INTELLEGENCE
+	    wisdomVirus = 8, # WISDOM
+	    charismaVirus = 7
+    ]
+    jxjStats = [
+	    healthJxj = 120, # HEALTH
+	    strengthJxj = 9, # STRENGTH
+	    consitutionJxj = 8, # CONSITUTION
+	    intellegenceJxj = 6, # INTELLEGENCE
+	    wisdomJxj = 8, # WISDOM
+	    charismaJxj = 7
+    ]
+    JXQStats = [
+	    healthJxq = 120, # HEALTH
+	    strengthJxq = 9, # STRENGTH
+	    consitutionJxq = 8, # CONSITUTION
+	    intellegenceJxq = 6, # INTELLEGENCE
+	    wisdomJxq = 8, # WISDOM
+	    charismaJxq = 7
+    ]
+    blackmaskStats = [
+	    healthBlackmask = 120, # HEALTH
+	    strengthBlackmask = 9, # STRENGTH
+	    consitutionBlackmask = 8, # CONSITUTION
+	    intellegenceBlackmask = 6, # INTELLEGENCE
+	    wisdomBlackmask = 8, # WISDOM
+	    charismaBlackmask = 7
+    ]
+    eclipsaStats = [
+	    healthEclipsa = 120, # HEALTH
+	    strengthEclipsa = 9, # STRENGTH
+	    consitutionEclipsa = 8, # CONSITUTION
+	    intellegenceEclipsa = 6, # INTELLEGENCE
+	    wisdomEclipsa = 8, # WISDOM
+	    charismaEclipsa = 7
+    ]
+    i = 0
+    while i < len(playerStats):
+	    playerStats[i] = genStats
+	    i += 1
+	    print(playerStats)
 
-def round(playerHealth, roundTime):
-    if playerHealth > 0 and roundTime > 0:
-        roundEnd = False
-    elif playerHealth <= 0 and roundTime <= 0
-        roundEnd = True
+genStats()
+
+print(genStats)
+
+#def round(playerHealth, roundTime):
+    #if playerHealth > 0 and roundTime > 0:
+        #roundEnd = False
+    #elif playerHealth <= 0 and roundTime <= 0
+        #roundEnd = True
         
-    if roundEnd = True:
-        print("K.O") and RoundScore + 1         
+    #if roundEnd = True:
+        #print("K.O") and RoundScore + 1         
     
-round(75, 0)
+#round(75, 0)
      
     
     
