@@ -23,6 +23,12 @@ def get_character_stats(character_name):
     Returns:
     A tuple of (health, attack, defense).
     '''
+    print(f"\nEnter the stats for (character_name):")
+    health = int(input("Health: "))
+    attack = int(input("Attack: "))
+    defense = int(input("defense: "))
+    return health, attack, defense
+
 #def round(playerHealth, roundTime):
     #if playerHealth > 0 and roundTime > 0:
         #roundEnd = False
