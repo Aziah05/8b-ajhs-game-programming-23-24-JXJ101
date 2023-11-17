@@ -29,6 +29,16 @@ def get_character_stats(character_name):
     defense = int(input("defense: "))
     return health, attack, defense
 
+#  Function to compare two character stats
+def compare_characters(char1_name, char1_stats, char2_name, char2_stats):
+    """
+    Compare the stats of 2 characters and prints the results.
+    Parameters:
+    - char1_name: Name of Character 1
+    - char1_stats: Stats of Character 1 (tuple of health, attack, defense)
+    - char2_name: Name of Character 2
+    - char2_stats: Stats of Character 2 (tuple of health, attack, defense)
+    """
 #def round(playerHealth, roundTime):
     #if playerHealth > 0 and roundTime > 0:
         #roundEnd = False
