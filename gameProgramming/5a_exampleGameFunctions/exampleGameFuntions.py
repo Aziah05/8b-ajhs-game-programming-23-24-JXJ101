@@ -14,11 +14,15 @@ def functionFour(param1, param2, param3):
     pass
 # Example to the funciton
 # fighting game genre
-# Choosing character
-
-character = {'aiden, jaiden, melina, blaze, virus, jxj, jxq, Jack, Blackmask, Eclipsa'}
-
-print("choose your character!")
+# Function to get user input for characrter stats
+def get_character_stats(character_name):
+    '''
+    Gets user input for character stats and returns a tuple of (health, attack, defense).
+    Parameters:
+    - character_name: The name of the character for which stats are being input.
+    Returns:
+    A tuple of (health, attack, defense).
+    '''
 #def round(playerHealth, roundTime):
     #if playerHealth > 0 and roundTime > 0:
         #roundEnd = False
