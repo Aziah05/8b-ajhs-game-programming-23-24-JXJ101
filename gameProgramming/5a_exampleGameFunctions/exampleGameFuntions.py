@@ -42,6 +42,32 @@ def compare_characters(char1_name, char1_stats, char2_name, char2_stats):
     print(f"\nComparing Characters:")
     print(f"{char1_name}: {char1_stats}")
     print(f"char1_name}: {char2_stats}")
+    
+    # Compare health
+    if char1_stats[0] > char2_stats[0]:
+        print(f"{char1_name} has more health.")
+    elif char1_stats[0] < char2_stats[0]:
+        print(f"{char2_name} has more health.")
+    else:
+        print("Both characters have the same health.... perfectly balence.")
+    
+    #compare attack 
+    if char1_stats[1] > char2_stats[1]:
+        print(f"{char1_name} has more attack.")
+    elif char1_stats[1] < char2_stats[1]:
+        print(f"{char2_name} has more attack.")
+    else:
+        print("Both characters have the same attack.... evenually match.")
+    
+    # Compare defense
+    if char1_stats[0] > char2_stats[0]:
+        print(f"{char1_name} has more defense.")
+    elif char1_stats[0] < char2_stats[0]:
+        print(f"{char2_name} has more defense.")
+    else:
+        print("Both characters have the same defense..... ran out of balence jokes sorry :(."
+    
+        
 #def round(playerHealth, roundTime):
     #if playerHealth > 0 and roundTime > 0:
         #roundEnd = False
