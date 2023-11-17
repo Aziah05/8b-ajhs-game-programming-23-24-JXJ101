@@ -39,6 +39,9 @@ def compare_characters(char1_name, char1_stats, char2_name, char2_stats):
     - char2_name: Name of Character 2
     - char2_stats: Stats of Character 2 (tuple of health, attack, defense)
     """
+    print(f"\nComparing Characters:")
+    print(f"{char1_name}: {char1_stats}")
+    print(f"char1_name}: {char2_stats}")
 #def round(playerHealth, roundTime):
     #if playerHealth > 0 and roundTime > 0:
         #roundEnd = False
