@@ -67,6 +67,31 @@ def compare_characters(char1_name, char1_stats, char2_name, char2_stats):
     else:
         print("Both characters have the same defense..... ran out of balence jokes sorry :(."
     
+# function to disply charachter selection menu
+def character_selection_menu(characters):
+
+# displays the character selection menu and returns the selected characters.
+    #Parameters:
+    # *characters: LIst of available characters.
+    # Returns:
+    #The selected character.
+    
+    print('\nCharacter Selection Menu:')
+    for i, character in enumrate(characters, 1):
+        print(f"(i). {character}")
+        
+    while True:
+        selection = int(input("Select a character (1-{}): ".format(len(characters))))
+        if 1 <= selection <= len(characters):
+            return characters[selectoin -1]
+        else:
+            print("Dude. Please choose a vaild character.")
+
+
+# Main funciton to run the character selection
+
+    
+    
         
 #def round(playerHealth, roundTime):
     #if playerHealth > 0 and roundTime > 0:
