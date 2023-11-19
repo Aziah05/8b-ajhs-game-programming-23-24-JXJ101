@@ -89,7 +89,23 @@ def character_selection_menu(characters):
 
 
 # Main funciton to run the character selection
-
+def character_selection():
+    # Main function to run the character selection process.
+    print("Welcome to the METAVERSE game character selection!\n")
+    
+    #Get stats for character 1
+    char1_name = character_selection_menu(["aiden", "jaiden", "melina", "blaze", "blackmask", "Jack"])
+    char1_stats = get_character_stats(char1_name)
+    
+    # Get stats for Character 2 
+    char2_name = character_selection_menu(["aiden", "jaiden", "melina", "blaze", "blackmask", "Jack"])
+    char2_stats = get_character_stats(char2_name)
+    
+    # Compare characters
+    compare_characters(char1_name, char1_stats, char2_name, char2_stats)
+    
+    # Run the character selection
+    character_selection()
     
     
         
