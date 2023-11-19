@@ -16,14 +16,17 @@ def functionFour(param1, param2, param3):
 # fighting game genre
 # Function to get user input for characrter stats
 def get_character_stats(character_name):
+    """
     
-    #Gets user input for character stats and returns a tuple of (health, attack, defense).
-    #Parameters:
-    #*character_name: The name of the character for which stats are being input.
+    Gets user input for character stats and returns a tuple of (health, attack, defense).
+    Parameters:
+    - character_name: The name of the character for which stats are being input.
     Returns:
-    # A tuple of (health, attack, defense).
+    A tuple of (health, attack, defense).
     
-    print(f"\nEnter the stats for (character_name):")
+    """
+    
+    print(f"\nEnter the stats for {character_name}:")
     health = int(input("Health: "))
     attack = int(input("Attack: "))
     defense = int(input("defense: "))
@@ -41,7 +44,7 @@ def compare_characters(char1_name, char1_stats, char2_name, char2_stats):
     
     print(f"\nComparing Characters:")
     print(f"{char1_name}: {char1_stats}")
-    print(f"char1_name}: {char2_stats}")
+    print(f"{char2_name}: {char2_stats}")
     
     # Compare health
     if char1_stats[0] > char2_stats[0]:
@@ -60,12 +63,12 @@ def compare_characters(char1_name, char1_stats, char2_name, char2_stats):
         print("Both characters have the same attack.... evenually match.")
     
     # Compare defense
-    if char1_stats[0] > char2_stats[0]:
+    if char1_stats[2] > char2_stats[2]:
         print(f"{char1_name} has more defense.")
-    elif char1_stats[0] < char2_stats[0]:
+    elif char1_stats[2] < char2_stats[2]:
         print(f"{char2_name} has more defense.")
     else:
-        print("Both characters have the same defense..... ran out of balence jokes sorry :(."
+        print("Both characters have the same defense..... ran out of balence jokes sorry :(.")
     
 # function to disply charachter selection menu
 def character_selection_menu(characters):
@@ -76,9 +79,9 @@ def character_selection_menu(characters):
     # Returns:
     #The selected character.
     
-    print('\nCharacter Selection Menu:')
-    for i, character in enumrate(characters, 1):
-        print(f"(i). {character}")
+    print("\nCharacter Selection Menu:")
+    for i, character in enumerate(characters, 1):
+        print(f"{i}. {character}")
         
     while True:
         selection = int(input("Select a character (1-{}): ".format(len(characters))))
