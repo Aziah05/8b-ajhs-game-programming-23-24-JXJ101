@@ -86,7 +86,7 @@ def character_selection_menu(characters):
     while True:
         selection = int(input("Select a character (1-{}): ".format(len(characters))))
         if 1 <= selection <= len(characters):
-            return characters[selectoin -1]
+            return characters[selection -1]
         else:
             print("Dude. Please choose a vaild character.")
 
